@@ -29,7 +29,8 @@ Logging Error Handler for DotKernel
 
 - Configure the error handler as shown below
 
-configs/autoload/error-handling.global.php
+config/autoload/error-handling.global.php
+
 ```php
 <?php
 
@@ -51,14 +52,17 @@ return [
 ];
 ```
 
+A configuration example for the default logger can be found in `config/log.global.php.dist`.
+
 When declaring the `ErrorHandlerInterface` alias you can choose whether to log or not:
+
 - for logging use `LogErrorHandler`
 - for the simple Zend Expressive handler user `ErrorHandler`
 
 The class `Dot\ErrorHandler\ErrorHandler` is the same as the Zend Expressive error handling class
 the only difference being the removal of the `final` statement for making extension possible.
 
-The class `Dot\ErrorHandler\LogErrorHandler` is `Dot\ErrorHandler\ErrorHandler` with 
+The class `Dot\ErrorHandler\LogErrorHandler` is `Dot\ErrorHandler\ErrorHandler` with
 added logging support.
 
 As a note: both `LogErrorHandler` and `ErrorHandler` have factories declared in the

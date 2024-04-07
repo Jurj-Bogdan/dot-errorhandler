@@ -5,7 +5,7 @@ and add `\Dot\ErrorHandler\ErrorHandlerInterface::class` (to `config/pipeline.ph
 
 - Configure the error handler as shown below
 
-configs/autoload/error-handling.global.php
+config/autoload/error-handling.global.php
 
 ```php
 <?php
@@ -27,6 +27,8 @@ return [
     ]
 ];
 ```
+
+A configuration example for the default logger can be found in `config/log.global.php.dist`.
 
 When declaring the `ErrorHandlerInterface` alias you can choose whether to log or not:
 
