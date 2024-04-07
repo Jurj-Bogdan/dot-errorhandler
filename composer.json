@@ -22,7 +22,8 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "laminas/laminas-dependency-plugin": false
         }
     },
     "require": {
@@ -36,8 +37,8 @@
     },
     "require-dev": {
         "laminas/laminas-coding-standard": "^2.5",
-        "mikey179/vfsstream": "^1.6",
-        "phpunit/phpunit": "^10.0",
+        "mikey179/vfsstream": "^1.6.7",
+        "phpunit/phpunit": "^10.5",
         "vimeo/psalm": "^5.22"
     },
     "autoload": {
