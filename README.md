@@ -22,11 +22,11 @@ Logging Error Handler for DotKernel
 `composer require dotkernel/dot-errorhandler:^3.3`
 
 - Add the config provider
-  - in `config/config.php` add `\Dot\ErrorHandler\ConfigProvider`
-  - in `config/pipeline.php` add `\Dot\ErrorHandler\ErrorHandlerInterface::class`
-    + the interface is used as an alias to keep all error handling related configurations in one file
-    + **IMPORTANT NOTE** there should be no other error handlers after this one (only before) because the other error handler will catch the error causing dot-errorhandler not to catch any error, we recommend using just one error handler unless you have an error-specific handler
-    
+    - in `config/config.php` add `\Dot\ErrorHandler\ConfigProvider`
+    - in `config/pipeline.php` add `\Dot\ErrorHandler\ErrorHandlerInterface::class`
+        - the interface is used as an alias to keep all error handling related configurations in one file
+        - **IMPORTANT NOTE** there should be no other error handlers after this one (only before) because the other error handler will catch the error causing dot-errorhandler not to catch any error, we recommend using just one error handler unless you have an error-specific handler
+
 - Configure the error handler as shown below
 
 configs/autoload/error-handling.global.php
@@ -51,7 +51,7 @@ return [
 ];
 ```
 
-When declaring the `ErrorHandlerInterface` alias you can choose whether to log or not: 
+When declaring the `ErrorHandlerInterface` alias you can choose whether to log or not:
 - for logging use `LogErrorHandler`
 - for the simple Zend Expressive handler user `ErrorHandler`
 

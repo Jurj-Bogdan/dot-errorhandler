@@ -29,6 +29,7 @@ return [
 ```
 
 When declaring the `ErrorHandlerInterface` alias you can choose whether to log or not:
+
 - for the simple Zend Expressive handler user `ErrorHandler`
 - for logging use `LogErrorHandler`
 
@@ -43,6 +44,7 @@ package's `ConfigProvider`. If you need a custom ErrorHandler it must have a fac
 declared in the config, as in the example.
 
 Example:
+
 ```php
 <?php
 
@@ -68,4 +70,5 @@ return [
     ]
 ];
 ```
+
 Config examples can be found in this project's `config` directory.
