@@ -19,7 +19,7 @@ Logging Error Handler for DotKernel
 
 - Add the composer package:
 
-`composer require dotkernel/dot-errorhandler:^3.3`
+`composer require dotkernel/dot-errorhandler`
 
 - Add the config provider
     - in `config/config.php` add `\Dot\ErrorHandler\ConfigProvider`

@@ -2,4 +2,4 @@
 
 Install `dotkernel/dot-errorhandler` by executing the following Composer command:
 
-    composer require dotkernel/dot-errorhandler:^3.3
+    composer require dotkernel/dot-errorhandler
