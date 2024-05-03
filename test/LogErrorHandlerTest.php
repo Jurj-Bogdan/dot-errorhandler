@@ -34,6 +34,8 @@ class LogErrorHandlerTest extends TestCase
     private ResponseInterface|MockObject $response;
     /** @var callable():ResponseInterface $responseFactory */
     private $responseFactory;
+    private StreamInterface|MockObject $body;
+    private RequestHandlerInterface|MockObject $handler;
     private Throwable|MockObject $exception;
     private ErrorResponseGenerator $errorResponseGenerator;
     private vfsStreamDirectory $fileSystem;
