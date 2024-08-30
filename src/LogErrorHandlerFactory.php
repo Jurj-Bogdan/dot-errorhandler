@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Dot\ErrorHandler;
 
+use Dot\Log\LoggerInterface;
 use InvalidArgumentException;
-use Laminas\Log\LoggerInterface;
 use Mezzio\Middleware\ErrorResponseGenerator;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\ContainerInterface;

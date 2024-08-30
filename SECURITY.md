@@ -2,12 +2,11 @@
 
 ## Supported Versions
 
-
-| Version | Supported          | PHP Version                                                                                                           |
-|---------|--------------------|-----------------------------------------------------------------------------------------------------------------------|
+| Version | Supported          | PHP Version                                                                                                      |
+|---------|--------------------|------------------------------------------------------------------------------------------------------------------|
+| 4.x     | :white_check_mark: | ![PHP from Packagist (specify version)](https://img.shields.io/packagist/php-v/dotkernel/dot-errorhandler/4.0.0) |
 | 3.x     | :white_check_mark: | ![PHP from Packagist (specify version)](https://img.shields.io/packagist/php-v/dotkernel/dot-errorhandler/3.3.2) |
-| <= 2.x  | :x:                |  |
-
+| <= 2.x  | :x:                |                                                                                                                  |
 
 ## Reporting Potential Security Issues
 
@@ -26,7 +25,6 @@ project contributors a chance to resolve the vulnerability and issue a new
 release prior to any public exposure; this helps protect the project's
 users, and provides them with a chance to upgrade and/or update in order to
 protect their applications.
-
 
 ## Policy
 

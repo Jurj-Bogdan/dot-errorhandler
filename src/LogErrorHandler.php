@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Dot\ErrorHandler;
 
+use Dot\Log\LoggerInterface;
 use ErrorException;
-use Laminas\Log\LoggerInterface;
 use Laminas\Stratigility\Middleware\ErrorResponseGenerator;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

@@ -1,8 +1,5 @@
 <?php
 
-use Laminas\Log\Formatter\Json;
-use Laminas\Log\Logger;
-
 return [
     'dot_log' => [
         'loggers' => [
@@ -10,7 +7,7 @@ return [
                 'writers' => [
                     'FileWriter' => [
                         'name' => 'stream',
-                        'priority' => Logger::ALERT,
+                        'priority' => \Dot\Log\Logger::ALERT,
                         'options' => [
                             'stream' => __DIR__ . '/../../log/error-log-{Y}-{m}-{d}.log',
                             // explicitly log all messages
@@ -19,12 +16,12 @@ return [
                                     'name' => 'priority',
                                     'options' => [
                                         'operator' => '>=',
-                                        'priority' => Logger::EMERG,
+                                        'priority' => \Dot\Log\Logger::EMERG,
                                     ],
                                 ],
                             ],
                             'formatter' => [
-                                'name' => Json::class,
+                                'name' => \Dot\Log\Formatter\Json::class,
                             ],
                         ],
                     ],
