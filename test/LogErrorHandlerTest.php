@@ -6,10 +6,10 @@ namespace DotTest\ErrorHandler;
 
 use Dot\ErrorHandler\LogErrorHandler;
 use Dot\ErrorHandler\LogErrorHandler as Subject;
+use Dot\Log\Formatter\Json;
+use Dot\Log\Logger;
+use Dot\Log\LoggerInterface;
 use ErrorException;
-use Laminas\Log\Formatter\Json;
-use Laminas\Log\Logger;
-use Laminas\Log\LoggerInterface;
 use Laminas\Stratigility\Middleware\ErrorResponseGenerator;
 use org\bovigo\vfs\vfsStream;
 use org\bovigo\vfs\vfsStreamDirectory;
